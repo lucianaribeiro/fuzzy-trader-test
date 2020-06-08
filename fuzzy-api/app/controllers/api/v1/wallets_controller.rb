@@ -4,7 +4,9 @@ class Api::V1::WalletsController < Api::V1::ApiController
 
     before_action :require_authorization!, only: [:show, :update, :destroy]
 
-    skip_before_action :verify_authenticity_token, only: [:create, :destroy]
+    # protect_from_forgery with: :null_session
+
+    skip_before_action :verify_authenticity_token, only: [:create, :destroy, :update]
 
     # GET /api/v1/wallets
 
