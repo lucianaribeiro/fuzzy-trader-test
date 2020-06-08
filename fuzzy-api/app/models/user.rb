@@ -5,5 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   
   acts_as_token_authenticatable
+
+  has_one :wallet, dependent: :destroy
   
 end

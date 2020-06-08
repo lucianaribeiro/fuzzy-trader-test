@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  active: MyString
+  total_active: MyString
+  active_price: MyString
+  total: MyString
+  user: one
+
+two:
+  active: MyString
+  total_active: MyString
+  active_price: MyString
+  total: MyString
+  user: two
